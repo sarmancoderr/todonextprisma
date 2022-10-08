@@ -1,4 +1,4 @@
-import type { TodoModel } from 'prismamodule'
+import type { TodoModel } from 'prismamodule/todos'
 import Head from 'next/head'
 import { SyntheticEvent, useEffect, useState } from 'react'
 
