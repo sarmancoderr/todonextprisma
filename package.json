@@ -2,6 +2,9 @@
   "name": "nextprismamongo",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "prismamodule"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,8 +13,11 @@
   },
   "dependencies": {
     "next": "12.3.1",
+    "next-connect": "^0.13.0",
+    "prismamodule": "1.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "use-http": "^1.0.27"
   },
   "devDependencies": {
     "@types/node": "18.8.3",
