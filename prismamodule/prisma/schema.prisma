@@ -15,3 +15,9 @@ model Todo {
   todoText    String
   done        Boolean @default(false)
 }
+
+model UserAccount {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  username    String
+  password    String
+}
