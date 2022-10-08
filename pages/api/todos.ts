@@ -2,7 +2,16 @@ import nc from 'next-connect'
 import type { NextApiRequest, NextApiResponse } from "next";
 import { listTodos, createTodo } from 'prismamodule'
 
-const handler = nc<NextApiRequest, NextApiResponse>({})
+const handler = nc<NextApiRequest, NextApiResponse>({
+    onError(err, req, res, next) {
+        console.log(err)
+
+        res.status(500).json({
+            msg: err.message,
+            error: JSON.stringify(err)
+        })
+    }
+})
     .get(async (req, res) => {
         res.status(200).json({
             todos: await listTodos()
