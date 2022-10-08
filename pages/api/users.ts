@@ -1,6 +1,6 @@
 import nc from 'next-connect'
 import type { NextApiRequest, NextApiResponse } from "next";
-import { listUsers, createUser } from 'prismamodule'
+import { listUsers, createUser } from 'prismamodule/users'
 
 const handler = nc<NextApiRequest, NextApiResponse>({
     onError(err, req, res, next) {

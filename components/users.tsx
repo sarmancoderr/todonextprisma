@@ -1,4 +1,4 @@
-import type { UserAccountModel } from 'prismamodule'
+import type { UserAccountModel } from 'prismamodule/users'
 import Head from 'next/head'
 import { SyntheticEvent, useEffect, useState } from 'react'
 

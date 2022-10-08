@@ -1,6 +1,6 @@
 import nc from 'next-connect'
 import type { NextApiRequest, NextApiResponse } from "next";
-import { listTodos, createTodo } from 'prismamodule'
+import { listTodos, createTodo } from 'prismamodule/todos'
 
 const handler = nc<NextApiRequest, NextApiResponse>({
     onError(err, req, res, next) {
