@@ -13,6 +13,8 @@ const handler = nc<NextApiRequest, NextApiResponse>({
     }
 })
     .get(async (req, res) => {
+        console.log('HOLA MUNDO, AQUI LISTADO DE TODOS')
+
         res.status(200).json({
             todos: await listTodos()
         })
